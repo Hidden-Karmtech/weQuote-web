@@ -1,0 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+body{
+	color: white;
+	font-family: 'Lobster', cursive;
+}
+
+#section1{
+	background-image: url('/images/logo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: center center;
+    background-size: 33%;
+}
