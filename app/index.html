@@ -1,66 +1,57 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>#weQuote</title>
-        <link rel="shortcut icon" href="/images/favicon.ico?v=2" type="image/x-icon" />
-        <link 
-        	rel="stylesheet" 
-        	type="text/css" 
-        	href="styles/bootstrap.min.css">
-        <link 
-        	rel="stylesheet" 
-        	type="text/css" 
-        	href="styles/bootstrap-theme.min.css">
-        <link 
-        	rel="stylesheet" 
-        	type="text/css" 
-        	href="styles/jquery.pagepiling.css">
-        <link 
-        	rel="stylesheet" 
-        	type="text/css" 
-        	href="styles/main.css">
-        <link 
-        	rel="stylesheet" 
-        	type="text/css" 
-        	href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
-    </head>
-    <body>
-    	<div id="pagepiling">
-		    <div class="section" id="section1">
-               <div style="width:100%;position:fixed;bottom:15px;">
-	    			<div id="title" class="text-center">
-	    				<h1>#weQuote</h1>
-						<p>Quote Together</p>
-		    		</div>
-		    	</div>
-		    </div>
-		    <div class="section" id="section2">
-		    	<div class="intro">
-		    		<h1>Simple</h1>
-					<p>Sections won't contain anchor links. It's more simple to configure but a bit more restrictive.</p>
-		    	</div>
-		    </div>
-		    <div class="section" id="section4">
-		    	<div class="intro">
-		    		<h1>URL without /#</h1>
-					<p>But back button won't work!</p>
-		    	</div>
-		    </div>
-		</div>
-    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    	<script type="text/javascript" src="scripts/jquery.pagepiling.min.js"></script>
-    	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-    	<script type="text/javascript">
-		$(document).ready(function() {
-	    	$('#pagepiling').pagepiling({
-			    sectionsColor: ['#5264ae', '#2ebe21', '#2C3E50', '#51bec4'],
-			    navigation: {
-			    	'position': 'right',
-			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Pgae 4']
-			   	}
-			});
-	    });
-    	</script>
-    </body>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>#weQuote</title>
+    <link rel="shortcut icon" href="/images/favicon.ico?v=2" type="image/x-icon" />
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/pagePilling/jquery.pagepiling.css" />
+    <!-- endbower -->
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
+</head>
+
+<body>
+    <div id="pagepiling">
+        <div class="section" id="section1">
+            <div style="width:100%;position:fixed;bottom:15px;">
+                <div id="title" class="text-center">
+                    <h1>#weQuote</h1>
+                    <p>Quote Together</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <h1>Simple</h1>
+                <p>Sections won't contain anchor links. It's more simple to configure but a bit more restrictive.</p>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div class="intro">
+                <h1>URL without /#</h1>
+                <p>But back button won't work!</p>
+            </div>
+        </div>
+    </div>
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/pagePilling/jquery.pagepiling.min.js"></script>
+    <!-- endbower -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#pagepiling').pagepiling({
+            sectionsColor: ['#5264ae', '#2ebe21', '#2C3E50', '#51bec4'],
+            navigation: {
+                'position': 'right',
+                'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Pgae 4']
+            }
+        });
+    });
+    </script>
+</body>
+
 </html>

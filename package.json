@@ -1,11 +1,13 @@
 {
-  "name": "ChromecastApps",
+  "name": "WeQuote-web",
   "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
+    "bower":"*",
     "grunt": "^0.4.5",
     "grunt-contrib-connect": "^0.8.0",
     "grunt-ftp-deploy": "^0.1.3",
+    "grunt-wiredep": "^1.9.0",
     "load-grunt-tasks": "^0.6.0"
   },
   "engines": {

@@ -3,11 +3,18 @@ module.exports = function (grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
+  grunt.loadNpmTasks('grunt-wiredep');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-ftp-deploy');
 
   // Define the configuration for all the tasks
   grunt.initConfig({
+    wiredep: {
+      app: {
+        src: ['app/index.html'],
+        ignorePath:  /\.\.\//
+      }      
+    },
     connect: {
       server: {
         options: {
