@@ -3,6 +3,7 @@
   "private": "true",
   "dependencies": {
     "bootstrap": "~3.3.1",
-    "pagePilling":"https://github.com/alvarotrigo/pagePiling.js.git#latest"
+    "pagePilling": "https://github.com/alvarotrigo/pagePiling.js.git#latest",
+    "fontawesome": "~4.2.0"
   }
 }
